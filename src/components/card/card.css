@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.overall{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: whitesmoke;
+    align-items: center;
+    background-image: url('../img/pizza.jpg');
+    background-repeat:no-repeat ;
+}
+.container{
+    display: flex;
+   
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+.card{
+    height: 500px;
+    margin: 40px;
+    
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    bottom: 240px;
+    transition: .5s;
+
+}
+button:hover{
+    cursor: pointer;
+     
+}
+button{
+   outline: none;
+   border: none;
+   color: #fff;
+   background: #333;
+   padding: 5px 10px;
+   font-size: 23px;
+   border-radius: 5px;
+   z-index: 4;
+}
+
+h1{
+        margin: 10px;
+        font-size: 40px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background: black;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
